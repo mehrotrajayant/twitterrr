@@ -1,0 +1,313 @@
+	a:link, a:visited {
+    background-color:#F00;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	text-shadow: 1px 1px 2px blue, 0 0 25px red, 0 0 5px darkblue;
+	font-weight:bolder;
+	
+}
+
+
+a:hover, a:active {
+    background-color:#0F0;
+	 background-color:#0F0;
+ 	transform: translateY(4px);
+}
+body {
+	background-color: #37A5D2;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 2em;
+	color: #336699;
+	margin-top: 0.1em;
+	margin-right: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 0.1em
+	}
+	
+	.background-wrap{
+	position:fixed;
+	z-index:-1000;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	top:0;
+	left:0;
+	}
+	#video-bg-elem{
+	position:absolute;
+	top:0;
+	left:0;
+	min-height:100%;
+	min-width:100%;
+	
+	}
+	
+p {
+	font-size:20px;
+	color:#0F0;
+	font-style:inherit;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+h1{
+	font-size:40px;
+	coloe:#0F0;
+	font-style:normal;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+h2 {
+	font-size:20px;
+	color:#F00;
+	}
+h3 {	
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 1.50em;	
+  	text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
+	color: #DCDCDC;
+	
+	}
+h4 {
+	color: #000000;
+	font-size:24px;
+	animation:ease-in-out;
+	}
+h5{
+	font-size:30px;
+	color:#F00;
+	font-family:"Times New Roman", Times, serif;
+	border:medium;
+	font-weight:bolder;
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
+}
+	h6{font-size:15px;
+	color:#0F0;
+		
+	}
+#option{
+	font-size:14px;
+	font-weight:bold;
+	font-style:italic;
+	}
+		
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:15px;
+}
+
+/* Set a style for all buttons */
+.button {
+    background-color:#F00;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+	border-radius: 12px;
+	alignment-adjust:middle;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover {
+	border: none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,03),0 17px 50px 0 rgba(0,0,0,0.5);
+}
+#input type{
+    background-color:#F09;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+	border-radius: 12px;
+	alignment-adjust:middle;
+}
+div {
+  
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}.....................next user singn up..................
+#Submit{ background-image:url(../images/0.jpg);
+ background-size:500px 500px;
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-position:center; 
+ margin-top:150px; margin-bottom:150px;
+ margin-right:150px; 
+ margin-left:450px; padding:9px 35px;
+ border: none; }
+
+ #button{ 
+ border-radius:10px; 
+ width:100px; 
+ height:40px;
+ background:#FF00FF; 
+ font-weight:bold;
+ font-size:20px; 
+ border: none;
+		}
+		.button {
+    background-color:#F00; /* Pink */
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+	font-stretch:ultra-condensed;
+	border: none;
+	 text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
+    margin: 4px 2px;
+    cursor: pointer; border-radius: 20px;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.4;
+}
+
+.button {
+	border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+	
+
+	border: none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5),0 17px 50px 0 rgba(0,0,0,0.6);
+}
+.button:active {
+	border: none;
+  background-color:#0F0;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
